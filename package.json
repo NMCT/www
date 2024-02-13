@@ -24,6 +24,13 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "all",
-    "useTabs": false
+    "useTabs": false,
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11"
   }
 }
