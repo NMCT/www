@@ -8,7 +8,7 @@ interface Props {
 const { title, body, class: className } = Astro.props
 ---
 
-<div class:list={['child-component', className]} class="rounded-3xl shadow-sm bg-white p-12">
+<div class:list={['child-component', className]} class="rounded-3xl shadow-sm bg-white p-12 dark:bg-neutral-800">
   <div class="max-w-xl mx-auto">
     <h2 class="font-bold text-2xl leading-snug mb-6">
       {title}
