@@ -1,0 +1,62 @@
+:root {
+  /* Neutral */
+  --global-color-neutral-50: #f5f5f5;
+  --global-color-neutral-100: #e5e6e6;
+  --global-color-neutral-200: #cdcfd0;
+  --global-color-neutral-300: #b9bcbd;
+  --global-color-neutral-400: #a6aaab;
+  --global-color-neutral-500: #929798;
+  --global-color-neutral-600: #767c7d;
+  --global-color-neutral-700: #5c6061;
+  --global-color-neutral-800: #404446;
+  --global-color-neutral-900: #25292a;
+  --global-color-primary-950: #0b0d0e;
+  --global-black: #000000;
+  --global-white: #ffffff;
+
+  /* Brand */
+  --global-color-howest: #44c9f6;
+  --global-color-mct-analysis: #a34eff;
+  --global-color-mct-code: #1093ff;
+  --global-color-mct-connect: #ff3c6e;
+  --global-color-mct-design: #ffa41c;
+  --global-color-mct-integrate: #86c800;
+
+  /* TOKENS */
+  /* Text */
+  --global-default: var(var(--global-color-neutral-900));
+  --global-meta: var(var(--global-color-neutral-600));
+  --global-brand: var(var(--global-color-howest));
+  --global-default: var(var(--global-color-neutral-900));
+  --global-light: var(--global-color-neutral-700);
+  --global-on-brand: var(--global-white);
+
+  /* Background */
+  --global-page: var(--global-white);
+  --global-surface: var(--global-color-neutral-50);
+  --global-brand: var(--global-color-howest);
+
+  /* Border */
+  --global-border: var(--global-color-neutral-100);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* TOKENS */
+    /* Text */
+    --global-default: var(var(--global-color-neutral-50));
+    --global-meta: var(var(--global-color-neutral-600));
+    --global-brand: var(var(--global-color-howest));
+    --global-default: var(var(--global-color-neutral-900));
+    --global-light: var(--global-color-neutral-200);
+    --global-on-brand: var(--global-color-primary-950);
+
+    /* Background */
+    --global-page: var(--global-color-primary-950);
+    --global-surface: var(--global-color-neutral-900);
+    --global-brand: var(--global-color-howest);
+
+    /* Border */
+    --global-border: var(--global-color-neutral-900);
+  }
+}
