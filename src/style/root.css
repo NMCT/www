@@ -1,26 +1,26 @@
 :root {
   /* Neutral */
-  --global-color-neutral-50: #f5f5f5;
-  --global-color-neutral-100: #e5e6e6;
-  --global-color-neutral-200: #cdcfd0;
-  --global-color-neutral-300: #b9bcbd;
-  --global-color-neutral-400: #a6aaab;
-  --global-color-neutral-500: #929798;
-  --global-color-neutral-600: #767c7d;
-  --global-color-neutral-700: #5c6061;
-  --global-color-neutral-800: #404446;
-  --global-color-neutral-900: #25292a;
-  --global-color-neutral-950: #0b0d0e;
-  --global-black: #000000;
-  --global-white: #ffffff;
+  --global-color-neutral-50: 245 245 245;
+  --global-color-neutral-100: 229 230 230;
+  --global-color-neutral-200: 205 207 208;
+  --global-color-neutral-300: 185 187 188;
+  --global-color-neutral-400: 166 170 171;
+  --global-color-neutral-500: 146 151 152;
+  --global-color-neutral-600: 118 124 125;
+  --global-color-neutral-700: 92 96 97;
+  --global-color-neutral-800: 64 68 70;
+  --global-color-neutral-900: 37 41 42;
+  --global-color-neutral-950: 11 13 14;
+  --global-black: 0 0 0;
+  --global-white: 255 255 255;
 
   /* Brand */
-  --global-color-howest: #44c9f6;
-  --global-color-mct-analysis: #a34eff;
-  --global-color-mct-code: #1093ff;
-  --global-color-mct-connect: #ff3c6e;
-  --global-color-mct-design: #ffa41c;
-  --global-color-mct-integrate: #86c800;
+  --global-color-howest: 68 201 246;
+  --global-color-mct-analysis: 163 78 255;
+  --global-color-mct-code: 16 147 255;
+  --global-color-mct-connect: 255 60 110;
+  --global-color-mct-design: 255 164 28;
+  --global-color-mct-integrate: 134 200 0;
 
   /* TOKENS */
   /* Text */
@@ -46,10 +46,10 @@
     --global-meta: var(--global-color-neutral-600);
     --global-brand: var(--global-color-howest);
     --global-light: var(--global-color-neutral-200);
-    --global-on-brand: var(--global-color-primary-950);
+    --global-on-brand: var(--global-color-neutral-950);
 
     /* Background */
-    --global-page: var(--global-color-primary-950);
+    --global-page: var(--global-color-neutral-950);
     --global-surface: var(--global-color-neutral-900);
 
     /* Border */

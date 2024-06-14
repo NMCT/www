@@ -6,32 +6,32 @@ export default defineConfig({
   theme: {
     colors: {
       neutral: {
-        50: '#f5f5f5',
-        100: '#e5e6e6',
-        200: '#cdcfd0',
-        300: '#b9bcbd',
-        400: '#a6aaab',
-        500: '#929798',
-        600: '#767c7d',
-        700: '#5c6061',
-        800: '#404446',
-        900: '#25292a',
-        950: '#0b0d0e',
+        50: 'rgb(var(--global-color-neutral-50))',
+        100: 'rgb(var(--global-color-neutral-100))',
+        200: 'rgb(var(--global-color-neutral-200))',
+        300: 'rgb(var(--global-color-neutral-300))',
+        400: 'rgb(var(--global-color-neutral-400))',
+        500: 'rgb(var(--global-color-neutral-500))',
+        600: 'rgb(var(--global-color-neutral-600))',
+        700: 'rgb(var(--global-color-neutral-700))',
+        800: 'rgb(var(--global-color-neutral-800))',
+        900: 'rgb(var(--global-color-neutral-900))',
+        950: 'rgb(var(--global-color-neutral-950))',
       },
 
       // tokens
-      default: 'var(--global-default, <alpha-value>)',
-      meta: 'var(--global-meta, <alpha-value>)',
-      brand: 'var(--global-brand, <alpha-value>)',
-      light: 'var(--global-light)',
-      'on-brand': 'var(--global-on-brand)',
+      default: 'rgb(var(--global-default) / <alpha-value>)',
+      meta: 'rgb(var(--global-meta) / <alpha-value>)',
+      brand: 'rgb(var(--global-brand) / <alpha-value>)',
+      light: 'rgb(var(--global-light))',
+      'on-brand': 'rgb(var(--global-on-brand))',
 
       /* Background */
-      page: 'var(--global-page',
-      surface: 'var(--global-surface)',
+      page: 'rgb(var(--global-page))',
+      surface: 'rgb(var(--global-surface))',
 
       /* Border */
-      border: 'var(--global-border)',
+      border: 'rgb(var(--global-border))',
     },
   },
 })
