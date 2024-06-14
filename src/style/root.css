@@ -10,7 +10,7 @@
   --global-color-neutral-700: #5c6061;
   --global-color-neutral-800: #404446;
   --global-color-neutral-900: #25292a;
-  --global-color-primary-950: #0b0d0e;
+  --global-color-neutral-950: #0b0d0e;
   --global-black: #000000;
   --global-white: #ffffff;
 
@@ -24,17 +24,15 @@
 
   /* TOKENS */
   /* Text */
-  --global-default: var(var(--global-color-neutral-900));
-  --global-meta: var(var(--global-color-neutral-600));
-  --global-brand: var(var(--global-color-howest));
-  --global-default: var(var(--global-color-neutral-900));
+  --global-default: var(--global-color-neutral-900);
+  --global-meta: var(--global-color-neutral-600);
+  --global-brand: var(--global-color-howest);
   --global-light: var(--global-color-neutral-700);
   --global-on-brand: var(--global-white);
 
   /* Background */
   --global-page: var(--global-white);
   --global-surface: var(--global-color-neutral-50);
-  --global-brand: var(--global-color-howest);
 
   /* Border */
   --global-border: var(--global-color-neutral-100);
@@ -44,17 +42,15 @@
   :root {
     /* TOKENS */
     /* Text */
-    --global-default: var(var(--global-color-neutral-50));
-    --global-meta: var(var(--global-color-neutral-600));
-    --global-brand: var(var(--global-color-howest));
-    --global-default: var(var(--global-color-neutral-900));
+    --global-default: var(--global-color-neutral-50);
+    --global-meta: var(--global-color-neutral-600);
+    --global-brand: var(--global-color-howest);
     --global-light: var(--global-color-neutral-200);
     --global-on-brand: var(--global-color-primary-950);
 
     /* Background */
     --global-page: var(--global-color-primary-950);
     --global-surface: var(--global-color-neutral-900);
-    --global-brand: var(--global-color-howest);
 
     /* Border */
     --global-border: var(--global-color-neutral-900);
