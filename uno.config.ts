@@ -33,5 +33,10 @@ export default defineConfig({
       /* Border */
       border: 'rgb(var(--global-border))',
     },
+
+    // Add the font family
+    fontFamily: {
+      sans: "'Inter Variable', sans-serif",
+    },
   },
 })

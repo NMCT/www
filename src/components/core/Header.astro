@@ -1,16 +1,13 @@
 ---
 import Logo from '../brand/Logo.astro'
+import Menu from '../navigation/Menu.astro'
+import Button from './Button.astro'
 ---
 
-<nav class="grid grid-cols-[1fr_auto_1fr]">
-  <Logo />
+<nav class="grid grid-cols-[1fr_auto_1fr] items-center">
+  <a class="w-fit" href="/"><Logo /></a>
 
-  <ul class="flex justify-end space-x-4">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
+  <Menu />
 
-  <button class="hidden lg:block">Get Started</button>
+  <Button class="ml-auto">Inschrijven</Button>
 </nav>

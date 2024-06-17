@@ -1,3 +1,11 @@
 ---
-
+const { class: className, ...rest } = Astro.props
 ---
+
+<button
+  class="px-3 py-1 text-white bg-brand rounded-md text-[.7777777rem] leading-loose w-fit"
+  class:list={['child-component', className]}
+  {...rest}
+>
+  <slot />
+</button>
