@@ -22,6 +22,9 @@
   --global-color-mct-design: 255 164 28;
   --global-color-mct-integrate: 134 200 0;
 
+  /* Typography */
+  --global-root-font-size: 18;
+
   /* TOKENS */
   /* Text */
   --global-default: var(--global-color-neutral-900);

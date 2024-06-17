@@ -1,0 +1,32 @@
+---
+import '../style/root.css'
+import '../style/screen.css'
+
+import Container from '../components/core/Container.astro'
+import Header from '../components/core/Header.astro'
+import Row from '../components/core/Row.astro'
+
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-page text-default">
+    <Row>
+      <Container>
+        <Header />
+      </Container>
+    </Row>
+    <slot />
+  </body>
+</html>

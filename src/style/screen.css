@@ -1,0 +1,4 @@
+html {
+  /* Use a defaut font size of 18px, but keep the ratio */
+  font-size: calc(var(--global-root-font-size) / 16 * 1rem);
+}
