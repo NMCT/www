@@ -2,11 +2,12 @@
 import '@/style/root.css'
 import '@/style/screen.css'
 
+import '@fontsource-variable/inter'
+
 import Container from '@/components/core/Container.astro'
 import Header from '@/components/core/Header.astro'
 import Row from '@/components/core/Row.astro'
-
-import '@fontsource-variable/inter'
+import TopBar from '@/components/navigation/TopBar.astro'
 
 interface Props {
   title: string
@@ -24,6 +25,7 @@ const { title } = Astro.props
     <title>{title} - MCT</title>
   </head>
   <body class="bg-page text-default font-sans">
+    <TopBar />
     <Row>
       <Container>
         <Header />

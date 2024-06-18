@@ -1,3 +1,7 @@
-<div class="px-24 py-6">
+---
+const { class: className, ...rest } = Astro.props
+---
+
+<div class="px-24 py-6" class:list={['child-component', className]} {...rest}>
   <slot />
 </div>

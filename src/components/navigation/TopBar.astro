@@ -1,5 +1,48 @@
 ---
+import { Icon } from 'astro-icon/components'
 
+import Container from '../core/Container.astro'
+
+const events = [
+  {
+    date: new Date('2025-01-14T16:00'),
+    title: 'Smart tech meets someone',
+    link: 'https://example.com',
+  },
+  {
+    date: new Date('2025-09-14T16:00'),
+    title: 'Infodag',
+    link: 'https://example.com',
+  },
+  {
+    date: new Date('2025-07-14T16:00'),
+    title: 'Openlesdag',
+    link: 'https://example.com',
+  },
+]
+
+const getClosestEvent = (): string => {
+  const now = new Date()
+  const closestEvent = events
+    .filter(event => event.date > now)
+    .sort((a, b) => a.date.getTime() - b.date.getTime())[0]
+
+  if (!closestEvent) return 'Geen evenementen gepland'
+
+  const date = new Intl.DateTimeFormat('nl-NL', {
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+  }).format(closestEvent.date)
+
+  return `${date} - <a href="${closestEvent.link}">${closestEvent.title}</a>`
+}
 ---
 
-<aside class="bg-brand w-full"></aside>
+<aside class="bg-brand h-8 w-full px-24">
+  <Container class="flex h-full items-center gap-4 text-white">
+    <Icon name="mdi:bell" />
+    <p class="text-[.7777777rem] font-semibold" set:html={getClosestEvent()} />
+  </Container>
+</aside>

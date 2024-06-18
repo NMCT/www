@@ -16,20 +16,7 @@ const moduleCollection = defineCollection({
   }),
 })
 
-const testimonialCollection = defineCollection({
-  type: 'data',
-  schema: z.object({
-    name: z.string(),
-    position: z.string(),
-    company: z.string(),
-    year: z.string(),
-    avatar: z.string(),
-    quote: z.string(),
-  }),
-})
-
 // 3. Export a single `collections` object to register your collection(s)
 export const collections = {
   programma: moduleCollection,
-  testimonials: testimonialCollection,
 }

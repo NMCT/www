@@ -1,3 +1,11 @@
-<div class="mx-auto max-w-6xl">
+---
+const { class: className, ...rest } = Astro.props
+---
+
+<div
+  class="mx-auto max-w-6xl"
+  class:list={['child-component', className]}
+  {...rest}
+>
   <slot />
 </div>
