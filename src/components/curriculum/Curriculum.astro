@@ -1,0 +1,164 @@
+---
+import { getCollection } from 'astro:content'
+
+import Module from './Module.astro'
+
+const modules = await getCollection('programma')
+---
+
+<div class="">
+  <div class="js-curriculum-choice">
+    <div class="">
+      <div class="">
+        <!-- <button class="c-curriculum-choice__button js-curriculum-button">
+          <span>Kies je expertise</span>
+        </button> -->
+
+        <div class="js-curriculum-choices">
+          <label class="">
+            <input
+              type="radio"
+              class="js-track-radio"
+              name="track"
+              id="profile-xr-developer"
+              value="xr-developer"
+            />
+            <span class="">XR Developer</span>
+          </label>
+
+          <label class="c-curriculum-choices__item">
+            <input
+              type="radio"
+              class="js-track-radio"
+              name="track"
+              id="profile-next-web-developer"
+              value="next-web-developer"
+            />
+            <span class="">Next Web Developer</span>
+          </label>
+
+          <label class="c-curriculum-choices__item">
+            <input
+              type="radio"
+              class="js-track-radio"
+              name="track"
+              id="profile-ai-engineer"
+              value="ai-engineer"
+            />
+            <span class="">AI Engineer</span>
+          </label>
+
+          <label class="c-curriculum-choices__item">
+            <input
+              type="radio"
+              class="js-track-radio"
+              name="track"
+              id="profile-iot-engineer"
+              value="iot-engineer"
+            />
+            <span class="">IoT Engineer</span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="grid grid-cols-6 grid-rows-30 gap-4 grid-flow-dense"
+    data-placeholder="Waar word jij expert in?"
+  >
+    {new Array(6).fill().map((element, index) => <h4>Semester {index + 1}</h4>)}
+
+    {
+      modules
+        .filter(module => module.data.weight) // Only show modules that show up in the curriculum
+        .sort((a, b) => a.data.weight - b.data.weight)
+        .sort((a, b) => a.data.semester - b.data.semester)
+        .map(module => (
+          // TODO: create a component.
+          <Module course={module} />
+        ))
+    }
+
+    <!-- <div class="c-curriculum__placeholder js-curriculum-placeholder">
+    <p>
+      Word je XR Developer, Next Web Developer, AI Engineer of IoT Engineer?
+      Kies je expertise vanaf semester 4!
+    </p>
+    </div> -->
+  </div>
+
+  <!-- <ul class="list-reset c-curriculum-legend">
+    <li class="c-curriculum-legend__item text-mono font-size-xxs">
+      <Icon
+        class="icon icon--s c-curriculum-legend__icon bg-color-surface-raised"
+        name="ph:cpu"
+      />
+      <span class="color-text-light">Analysis</span>
+    </li>
+    <li class="c-curriculum-legend__item text-mono font-size-xxs">
+  <Icon
+    class="icon icon--s c-curriculum-legend__icon bg-color-surface-raised"
+    name="ph:code"
+  />
+  <span class="color-text-light">Code</span>
+</div>
+<li class="c-curriculum-legend__item text-mono font-size-xxs">
+  <Icon
+    class="icon icon--s c-curriculum-legend__icon bg-color-surface-raised"
+    name="ph:graph"
+  />
+  <span class="color-text-light">Connect</span>
+</li>
+<li class="c-curriculum-legend__item text-mono font-size-xxs">
+  <Icon
+    class="icon icon--s c-curriculum-legend__icon bg-color-surface-raised"
+    name="ph:layout"
+  />
+  <span class="color-text-light">Design</span>
+</li>
+<li class="c-curriculum-legend__item text-mono font-size-xxs">
+  <Icon
+    class="icon icon--s c-curriculum-legend__icon bg-color-surface-raised"
+    name="ph:users-three"
+  />
+  <span class="color-text-light">Integrate</span>
+</li>
+-->
+
+  <script>
+    const tracks = [
+      'ai-engineer',
+      'iot-engineer',
+      'next-web-developer',
+      'xr-developer',
+    ]
+    let selectedTrack = tracks[Math.floor(Math.random() * tracks.length)]
+
+    const trackSelection = document.querySelectorAll('.js-track-radio')
+    const courses = document.querySelectorAll('.js-course')
+
+    const toggleModules = track => {
+      console.log(track)
+      for (const course of courses) {
+        const classes = course.classList
+        if (course.classList.contains(`js-track-${track}`)) {
+          course.classList.remove('hidden')
+        } else {
+          course.classList.add('hidden')
+        }
+      }
+    }
+
+    for (const track of trackSelection) {
+      if (selectedTrack == track.value) track.checked = true
+
+      track.addEventListener('change', event => {
+        selectedTrack = event.target.value
+        toggleModules(selectedTrack)
+      })
+    }
+
+    toggleModules(selectedTrack)
+  </script>
+</div>

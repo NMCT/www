@@ -1,0 +1,23 @@
+---
+const { course } = Astro.props
+---
+
+<a
+  href={`programma/${course.slug}`}
+  class={`js-course row-span-${
+    course.data.studycredits
+  } col-start-${course.data.semester} ${
+    course.data.tracks &&
+    course.data.tracks.map(track => ` js-track-${track}`).join(``)
+  }`}
+>
+  <h3 class="">{course.data.title}</h3>
+  <!-- <p>
+    Semester {course.data.semester} - Weight {course.data.weight}
+  </p> -->
+  <!-- {
+    course.data.tools && course.data.tools.length > 0 && (
+      <p class="c-course__tools">{course.data.tools.join(`, `)}</p>
+    )
+  } -->
+</a>

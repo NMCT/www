@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content'
+import PageLayout from '../../layouts/PageLayout.astro'
+
+export async function getStaticPaths() {
+  const modules = await getCollection('programma')
+
+  return modules.map(module => ({
+    params: {
+      slug: module.slug,
+    },
+    props: {
+      module,
+    },
+  }))
+}
+
+const { Content } = await Astro.props.module.render()
+const { title } = await Astro.props.module.data
+---
+
+<PageLayout title={title}>
+  <section class="row row--xxl">
+    <div class="container container--small">
+      <h1>{title}</h1>
+      <div class="mt-s">
+        <Content />
+      </div>
+    </div>
+  </section>
+</PageLayout>

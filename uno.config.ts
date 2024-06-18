@@ -39,4 +39,11 @@ export default defineConfig({
       sans: "'Inter Variable', sans-serif",
     },
   },
+
+  safelist: [
+    // Modules can be up to 36 study credits (and we don't know it in advance)
+    ...Array.from({ length: 30 }, (_, i) => `row-span-${i + 1}`),
+    // Modules can start at any of the 6 semesters
+    ...Array.from({ length: 6 }, (_, i) => `col-start-${i + 1}`),
+  ],
 })
