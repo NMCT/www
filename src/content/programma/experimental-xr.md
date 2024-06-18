@@ -4,11 +4,11 @@ semester: 5
 studycredits: 6
 weight: 10
 tags:
-- humanInterfaces
-- extendedInteraction
+  - humanInterfaces
+  - extendedInteraction
 pillar: code
 tracks:
-- xr-developer
+  - xr-developer
 ---
 
 **Onder voorbehoud**

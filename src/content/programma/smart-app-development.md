@@ -4,19 +4,19 @@ semester: 4
 studycredits: 6
 weight: 20
 tags:
-- expo
-- reactNative
-- iOS
-- Android
+  - expo
+  - reactNative
+  - iOS
+  - Android
 pillar: code
 tools:
-- Expo
-- webpack
-- JS
-- ReactNative
-- Lottie
+  - Expo
+  - webpack
+  - JS
+  - ReactNative
+  - Lottie
 tracks:
-- next-web-developer
+  - next-web-developer
 ---
 
 **Smart App Development — Hoe maken we performante en mooie apps die een zo veel mogelijk gedeelde codebase hebben tussen iOS & Android?**

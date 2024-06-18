@@ -1,24 +1,24 @@
 ---
 title: Team Project
 aliases:
-    - project-2
+  - project-2
 semester: 3
 studycredits: 6
 weight: 50
 tags:
-- agile
-- sprints
-- teamwork
-- projectmanagement
+  - agile
+  - sprints
+  - teamwork
+  - projectmanagement
 pillar: project
 tools:
-- Trello
-- Toggl
+  - Trello
+  - Toggl
 tracks:
-- next-web-developer
-- xr-developer
-- ai-engineer
-- iot-engineer
+  - next-web-developer
+  - xr-developer
+  - ai-engineer
+  - iot-engineer
 ---
 
 Na alle modules en examens uit Semester 3 ([Device Programming](/programma/device-programming), [Security](/programma/security), [IoT Cloud](/programma/iot-cloud) en [Interaction Design](/programma/interaction-design)), volgt het Team Project, een traject van 3 à 4 weken. De opgedane kennis uit de vorige modules wordt tijdens deze projectweken in de praktijk omgezet in een **interne case**.

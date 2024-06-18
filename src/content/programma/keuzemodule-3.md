@@ -7,5 +7,4 @@ pillar: specialisatie
 default: true
 ---
 
-
 In het 3de semester heb je een keuze tussen de module "Containers & Orchestration" of "Interaction Design"

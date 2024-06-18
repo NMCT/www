@@ -4,20 +4,21 @@ semester: 3
 studycredits: 6
 weight: 30
 tags:
-- privacy
-- security
-- testing
+  - privacy
+  - security
+  - testing
 pillar: connect
 tools:
-- Kali
-- Wireshark
-- OWASP ZAP
+  - Kali
+  - Wireshark
+  - OWASP ZAP
 tracks:
-- next-web-developer
-- xr-developer
-- ai-engineer
-- iot-engineer
+  - next-web-developer
+  - xr-developer
+  - ai-engineer
+  - iot-engineer
 ---
+
 Studenten worden bewust gemaakt van de mogelijke bedreigingen die de **beschikbaarheid**, de **vertrouwelijkheid** of de **integriteit** van een systeem **kunnen compromitteren**
 Er worden diverse tegenmaatregelen besproken die de kwetsbaarheid tegenover deze bedreigingen kunnen verminderen of minimaliseren.
 

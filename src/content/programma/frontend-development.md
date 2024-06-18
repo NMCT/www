@@ -5,16 +5,16 @@ semester: 4
 studycredits: 6
 weight: 10
 tags:
-- typescript
-- scss
-- react
+  - typescript
+  - scss
+  - react
 pillar: code
 tracks:
-- next-web-developer
+  - next-web-developer
 tools:
-- Visual Studio Code
-- Chrome developer tools
-- React
+  - Visual Studio Code
+  - Chrome developer tools
+  - React
 ---
 
 We beginnen de module met een korte terugblik op eerdere modules. Een opfrissing van de module User interface design helpen om HTML & CSS weer goed te schrijven. We nemen ook notie van de beste semantische HTML-tags en wat er kan helpen om goede SEO te bereiken op onze website’s.

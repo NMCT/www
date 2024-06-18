@@ -4,18 +4,18 @@ semester: 5
 studycredits: 6
 weight: 20
 tags:
-- dsp
-- neural-networks
-- predictions
-- classifications
+  - dsp
+  - neural-networks
+  - predictions
+  - classifications
 pillar: analysis
 tracks:
-- ai-engineer
+  - ai-engineer
 tools:
-- Convolutional Neural Networks (CNN)
-- Generative Adversarial Networks (GAN)
-- Long-Short Term Memory (LSTM)
-- Recurrent Neural Networks (RNN)
+  - Convolutional Neural Networks (CNN)
+  - Generative Adversarial Networks (GAN)
+  - Long-Short Term Memory (LSTM)
+  - Recurrent Neural Networks (RNN)
 ---
 
 **Opgelet: Deze module kan je ook volgen als 'AI for Healthcare', een unieke samenwerking tussen Howest MCT en Howest BIT. Je leert er toegepaste praktijk toepassingen voor de medische wereld.**

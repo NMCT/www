@@ -4,16 +4,16 @@ semester: 3
 studycredits: 6
 weight: 30
 tags:
-- Docker
-- Kubernetes
+  - Docker
+  - Kubernetes
 pillar: code
 tools:
-- Docker
-- Kubernetes
+  - Docker
+  - Kubernetes
 choice: true
 tracks:
-- ai-engineer
-- iot-engineer
+  - ai-engineer
+  - iot-engineer
 ---
 
 Als moderne IT-professional weet je dat het beheer van complexe applicaties een uitdaging kan zijn. Virtualisatie, Python virtual environments (venv), microservices en DevOps hebben allemaal hun eigen uitdagingen. Gelukkig zijn er containerization en orchestration om het beheer van je applicaties te vereenvoudigen en schaalbaar te maken.

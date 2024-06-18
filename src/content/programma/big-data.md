@@ -1,29 +1,29 @@
 ---
 title: Big Data
-aliases: 
-- artificial-intelligence-big-data
+aliases:
+  - artificial-intelligence-big-data
 semester: 4
 studycredits: 6
 weight: 20
 tags:
-- timeseries 
-- nosql 
-- textsearch 
-- mapreduce 
-- spark 
-- stream 
-- batch
-- cloud
+  - timeseries
+  - nosql
+  - textsearch
+  - mapreduce
+  - spark
+  - stream
+  - batch
+  - cloud
 pillar: analysis
-tracks: 
-- ai-engineer
+tracks:
+  - ai-engineer
 tools:
-- Elasticsearch
-- Kafka
-- InfluxDB
-- AWS
-- MySQL
-- PySpark
+  - Elasticsearch
+  - Kafka
+  - InfluxDB
+  - AWS
+  - MySQL
+  - PySpark
 ---
 
 Met **IoT sensor data** problemen voorspellen, transacties op een veilige manier laten gebeuren of met text search intelligent informatie ophalen: **data intensieve applicaties steunen op een complexe data architectuur!** Je duikt diept in schema flexibility, isolation levels, index structures, partitioning en nog veel meer zodat je gefundeerde keuzes kan maken als data architect. Je zal begrijpen dat het **CAP Theoreum** (Consistency, Availability and Partioning, choose 2) een sterke vereenvoudiging is. Je leert hoe je (architecturale) keuzes van databaseontwikkelaars kan doorgronden en hoe je deze kan gebruiken voor jouw applicatie.

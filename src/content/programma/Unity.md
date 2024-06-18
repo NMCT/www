@@ -1,16 +1,16 @@
 ---
-title: "Unity (DAE: Platform Development 2)"
+title: 'Unity (DAE: Platform Development 2)'
 semester: 4
 studycredits: 6
 weight: 10
 tags:
-- Unity
-- 3DProgramming
+  - Unity
+  - 3DProgramming
 pillar: code
 tracks:
-- xr-developer
+  - xr-developer
 tools:
-- Unity
+  - Unity
 ---
 
 Een Extended Reality applicatie bouwen begint bij het ontwikkelen van een programma.

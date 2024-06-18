@@ -4,19 +4,19 @@ semester: 1
 studycredits: 6
 weight: 50
 tags:
-- arduino
-- sensors
-- microcontroller
-- prototyping
+  - arduino
+  - sensors
+  - microcontroller
+  - prototyping
 pillar: project
 tools:
-- Arduino
-- ESP32
+  - Arduino
+  - ESP32
 tracks:
-- next-web-developer
-- xr-developer
-- ai-engineer
-- iot-engineer
+  - next-web-developer
+  - xr-developer
+  - ai-engineer
+  - iot-engineer
 ---
 
 Met behulp van een microcontrollerboard (bv.: Arduino UNO, ESP32) en enkele elektronica componenten bouwen we een tof idee uit tot een werkend prototype. We starten met de basis, dus voorkennis is niet vereist. Elektrische schakelingen en componenten worden stap per stap verkend. We leren werken met de multimeter zodat we zelf fouten kunnen opsporen en indien nodig de fouten opsporen en oplossen. De software code om het controller bordje aan te sturen leren we ook stap per stap opbouwen. We schrijven de software code op de laptop en sturen deze dan door naar ons controllerboard.

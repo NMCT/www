@@ -4,15 +4,15 @@ semester: 5
 studycredits: 6
 weight: 10
 tags:
-- neuralnetworks
-- ai
-- dsp
+  - neuralnetworks
+  - ai
+  - dsp
 pillar: analysis
 tracks:
-- ai-engineer
+  - ai-engineer
 hide: true
 alternates:
-    - deep-learning
+  - deep-learning
 ---
 
 Wanneer twee IT bachelors in Howest samenwerken om beide expertises te integreren, krijg je een module als AI For Healthcare die daar de vruchten van plukt: een samenwerking tussen de Advanced Bachelor Bioinformatica in combinatie met Multimedia en Creatieve Technologie.

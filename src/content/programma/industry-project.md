@@ -1,22 +1,22 @@
 ---
 title: Industry Project
 aliases:
-    - /project-3
+  - /project-3
 semester: 4
 studycredits: 6
 weight: 50
 tags:
-- agile
-- sprints
-- teamwork
-- companyprojects
-- deadlines
+  - agile
+  - sprints
+  - teamwork
+  - companyprojects
+  - deadlines
 pillar: project
 tracks:
-- next-web-developer
-- xr-developer
-- ai-engineer
-- iot-engineer
+  - next-web-developer
+  - xr-developer
+  - ai-engineer
+  - iot-engineer
 ---
 
 **Na alle modules en examens uit Semester 4, volgt het Industry Project, een traject van 4 à 5 weken. De opgedane kennis uit de vorige modules wordt tijdens deze projectweken in de praktijk omgezet in een externe case.**

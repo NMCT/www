@@ -4,18 +4,19 @@ semester: 6
 studycredits: 6
 weight: 20
 tags:
-- reflection
-- research
-- field
+  - reflection
+  - research
+  - field
 pillar: project
 tracks:
-- next-web-developer
-- xr-developer
-- ai-engineer
-- iot-engineer
+  - next-web-developer
+  - xr-developer
+  - ai-engineer
+  - iot-engineer
 ---
 
 De opleiding MCT wordt afgesloten met een stage in het werkveld én een individuele bachelorproef. De bachelorproef is de ideale gelegenheid voor de toekomstige bachelor om zich te verdiepen in een aantal essentiële technische competenties. Daarnaast is de bachelorproef ook de manier om heel wat algemene competenties verder te ontwikkelen. Zo dient een student
+
 - in staat zijn om gedurende korte periode een specifiek aspect te onderzoeken;
 - hiervoor de nodige denk- als redeneervaardigheid aan te wenden;
 - de resultaten van zijn/haar onderzoek kritisch te bekijken;
@@ -25,9 +26,10 @@ De opleiding MCT wordt afgesloten met een stage in het werkveld én een individu
 - een attitude tot levenslang leren zich eigen maken.
 
 Hoe komt een bachelorproef tot stand?
+
 1. De bachelorproef vertrekt van een concrete onderzoeksvraag, al dan niet afkomstig vanuit het stagewerkveld. De opleiding bewaakt het eindniveau ervan.
 2. Het onderzoek gebeurt op school: de onderzoeksvraag wordt in een afzonderlijke projectmodule (‘project 4’) in team gedurende 6 weken volledig technisch uitgewerkt. Hierbij bedenkt/creëert/onderzoekt het team studenten een eigen oplossing/ontwerp/prototype (al dan niet vooraf in specifieke richting gestuurd).
-3. In de bachelorproef gaat de student individueel het behaalde resultaat aftoetsen met bedrijfswereld & community. 
+3. In de bachelorproef gaat de student individueel het behaalde resultaat aftoetsen met bedrijfswereld & community.
 
 De bachelorproef moet een valorisatiewaarde/meerwaarde voor het werkveld hebben.
 

@@ -4,15 +4,15 @@ semester: 5
 studycredits: 6
 weight: 30
 tags:
-- Docker
-- Kubernetes
+  - Docker
+  - Kubernetes
 pillar: code
 tracks:
-- xr-developer
-- next-web-developer
+  - xr-developer
+  - next-web-developer
 tools:
-- Docker
-- Kubernetes
+  - Docker
+  - Kubernetes
 ---
 
 Als moderne IT-professional weet je dat het beheer van complexe applicaties een uitdaging kan zijn. Virtualisatie, Python virtual environments (venv), microservices en DevOps hebben allemaal hun eigen uitdagingen. Gelukkig zijn er containerization en orchestration om het beheer van je applicaties te vereenvoudigen en schaalbaar te maken.

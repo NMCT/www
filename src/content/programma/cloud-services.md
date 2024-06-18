@@ -5,19 +5,19 @@ semester: 5
 studycredits: 6
 weight: 10
 tags:
-- Amazon 
-- AWS 
-- Microsoft 
-- Azure
+  - Amazon
+  - AWS
+  - Microsoft
+  - Azure
 pillar: connect
 tracks:
-- iot-engineer
+  - iot-engineer
 tools:
-- File storage
-- Object storage
-- Docker
-- VPC
-- DDoS
+  - File storage
+  - Object storage
+  - Docker
+  - VPC
+  - DDoS
 ---
 
 Cloud Computing is niet meer hip, Cloud Computing is gemeengoed. Daarom is het niet meer dan logisch dat we in MCT aan de slag gaan met **de twee grootste public cloud platformen: Amazon Web Services (AWS) en Microsoft Azure**.

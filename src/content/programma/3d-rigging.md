@@ -4,10 +4,10 @@ semester: 4
 studycredits: 6
 weight: 40
 tags:
-- Rigging
-- Animations
-- 3D-UX
-- 3D-UI
+  - Rigging
+  - Animations
+  - 3D-UX
+  - 3D-UI
 pillar: design
 ---
 

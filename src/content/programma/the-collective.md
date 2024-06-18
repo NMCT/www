@@ -4,14 +4,14 @@ semester: 5
 studycredits: 6
 weight: 40
 tags:
-- international
-- business
-- mvp
-- interdisciplinary
-- entrepreneurial
+  - international
+  - business
+  - mvp
+  - interdisciplinary
+  - entrepreneurial
 pillar: project
 tools:
-- Miro
+  - Miro
 hide: true
 ---
 

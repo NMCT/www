@@ -5,19 +5,19 @@ semester: 4
 studycredits: 6
 weight: 20
 tags:
-- linux
-- debian
-- operatingsystem
-- iot
+  - linux
+  - debian
+  - operatingsystem
+  - iot
 pillar: connect
 tracks:
-- iot-engineer
+  - iot-engineer
 tools:
-- Debian GNU/Linux
-- Apache httpd
-- haproxy
-- bash
-- ssh
+  - Debian GNU/Linux
+  - Apache httpd
+  - haproxy
+  - bash
+  - ssh
 ---
 
 Linux is alomtegenwoordig. Alleen weten veel mensen dat niet. Gebruik je soms Facebook? Of Instagram? Of Spotify? Of Twitter? Of Android? Dan **gebruik je onbewust Linux**. Want al deze diensten gebruiken achterliggend Linux.

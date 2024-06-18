@@ -4,21 +4,22 @@ semester: 5
 studycredits: 6
 weight: 40
 tags:
-- Lora
-- 5G
-- embeddedpython
-- wearables
-- EdgeAI
+  - Lora
+  - 5G
+  - embeddedpython
+  - wearables
+  - EdgeAI
 pillar: connect
 tracks:
-- iot-engineer
-- xr-developer
+  - iot-engineer
+  - xr-developer
 tools:
-- InfluxDB
-- Grafana
-- MQTT
-- Reachy
+  - InfluxDB
+  - Grafana
+  - MQTT
+  - Reachy
 ---
+
 Robots bestaan al lang: zware industriële robots werden reeds geproduceerd sinds 1956. Sinds een paar jaar zijn huishoudelijke robots zoals een grasmaairobot en stofzuigerbot gemeengoed aan het worden.
 
 De echte robot revolutie moet echter nog beginnen! Robots zullen enorme sprongen vooruit maken dankzij internet of things en geavanceerde AI software. Eenmaal een robot ook een "Thing" is dat geconnecteerd is aan het **Internet of Things**, kan men AI toe passen op de data geproduceerd door de sensors van duizenden robots **(= Big Data)**. Robots leren dus van elkaars "ervaringen" dankzij Internet of Things zoals wij leren van filmpjes en websites op het Web. In Sci-Fi taal: een Skynet geconnecteerde terminator leert sneller bij dan een alleenstaande voorgeprogrammeerde R2D2.
