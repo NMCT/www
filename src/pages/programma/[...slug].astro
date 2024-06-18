@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content'
-import PageLayout from '../../layouts/PageLayout.astro'
+import PageLayout from '@/layouts/PageLayout.astro'
 
 export async function getStaticPaths() {
   const modules = await getCollection('programma')
@@ -20,10 +20,10 @@ const { title } = await Astro.props.module.data
 ---
 
 <PageLayout title={title}>
-  <section class="row row--xxl">
-    <div class="container--small container">
+  <section class="">
+    <div class="">
       <h1>{title}</h1>
-      <div class="mt-s">
+      <div class="">
         <Content />
       </div>
     </div>
