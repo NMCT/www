@@ -5,7 +5,12 @@ import Button from './Button.astro'
 ---
 
 <nav class="grid grid-cols-[1fr_auto_1fr] items-center">
-  <a class="w-fit" href="/"><Logo /></a>
+  <a
+    class="focus-visible:ring-3 w-fit rounded outline-none ring-blue-200"
+    href="/"
+  >
+    <Logo />
+  </a>
 
   <Menu />
 

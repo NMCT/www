@@ -4,11 +4,13 @@ interface Props {
 }
 
 const { link }: Props = Astro.props
+
+const pathname: string = new URL(Astro.request.url).pathname
 ---
 
 <a
   href={link}
-  class="text-brand hover:bg-brand/10 rounded-md px-3 py-1 text-[.7777777rem] leading-loose"
+  class={`focus-visible:ring-3 flex h-8 items-center rounded rounded-md px-3 text-[.7777777rem] outline-none ring-blue-200 hover:bg-brand/10 ${pathname === link ? 'text-brand bg-brand/10' : 'text-default'}`}
 >
   <slot />
 </a>
