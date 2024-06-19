@@ -8,7 +8,7 @@ const { course } = Astro.props
     course.data.studycredits
   } col-start-${course.data.semester} ${
     course.data.tracks &&
-    course.data.tracks.map(track => ` js-track-${track}`).join(``)
+    course.data.tracks.map((track: string) => ` js-track-${track}`).join(``)
   }`}
 >
   <h3 class="">{course.data.title}</h3>
