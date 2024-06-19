@@ -36,13 +36,16 @@ const getClosestEvent = (): string => {
     minute: 'numeric',
   }).format(closestEvent.date)
 
-  return `${date} - <a href="${closestEvent.link}">${closestEvent.title}</a>`
+  return `${date} - <a class="outline-none focus-visible:ring-3 ring-white/90 rounded" href="${closestEvent.link}">${closestEvent.title}</a>`
 }
 ---
 
 <aside class="bg-brand h-8 w-full px-24">
   <Container class="flex h-full items-center gap-4 text-white">
-    <Icon name="mdi:bell" />
+    <Icon
+      name="mdi:bell"
+      class="animate-bellshake duration-4s animation-delay-1s"
+    />
     <p class="text-[.7777777rem] font-semibold" set:html={getClosestEvent()} />
   </Container>
 </aside>

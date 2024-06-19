@@ -38,6 +38,27 @@ export default defineConfig({
     fontFamily: {
       sans: "'Inter Variable', sans-serif",
     },
+
+    // animation: {
+    keyframes: {
+      bellshake: {
+        '0%': { transform: 'rotate(0)' },
+        '2%': { transform: 'rotate(11deg)' },
+        '4%': { transform: 'rotate(-11deg)' },
+        '6%': { transform: 'rotate(7deg)' },
+        '8%': { transform: 'rotate(-7deg)' },
+        '10%': { transform: 'rotate(4deg)' },
+        '12%': { transform: 'rotate(-4deg)' },
+        '14%': { transform: 'rotate(2deg)' },
+        '16%': { transform: 'rotate(-2deg)' },
+        '18%': { transform: 'rotate(1deg)' },
+        '19%': { transform: 'rotate(0)' },
+        '100%': { transform: 'rotate(0)' },
+      },
+      // },
+      //4s 1s ease-in-out infinite
+      // bellshake: 'bellshake',
+    },
   },
 
   safelist: [
