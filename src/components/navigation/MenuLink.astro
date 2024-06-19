@@ -1,13 +1,9 @@
 ---
-interface Props {
-  link: string
-}
+const { link } = Astro.props
 
-const { link }: Props = Astro.props
+const pathname = new URL(Astro.request.url).pathname
 
-const pathname: string = new URL(Astro.request.url).pathname
-
-const shouldBeActive = (): boolean =>
+const shouldBeActive = () =>
   pathname === '/' || link === '/' ? link === pathname : pathname.includes(link)
 ---
 

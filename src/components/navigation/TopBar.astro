@@ -21,7 +21,7 @@ const events = [
   },
 ]
 
-const getClosestEvent = (): string => {
+const getClosestEvent = () => {
   const now = new Date()
   const closestEvent = events
     .filter(event => event.date > now)
