@@ -46,6 +46,9 @@ const getClosestEvent = (): string => {
       name="mdi:bell"
       class="animate-bellshake duration-4s animation-delay-1s"
     />
-    <p class="text-[.7777777rem] font-semibold" set:html={getClosestEvent()} />
+    <p
+      class="font-mono text-[.7777777rem] font-semibold uppercase"
+      set:html={getClosestEvent()}
+    />
   </Container>
 </aside>

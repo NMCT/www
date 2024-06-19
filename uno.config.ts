@@ -37,6 +37,7 @@ export default defineConfig({
     // Add the font family
     fontFamily: {
       sans: "'Inter Variable', sans-serif",
+      mono: "'Roboto Mono Variable', monospace",
     },
 
     // animation: {
