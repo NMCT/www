@@ -67,17 +67,18 @@ const modules = await getCollection('programma')
     class="grid-rows-30 grid grid-flow-dense grid-cols-6 gap-4"
     data-placeholder="Waar word jij expert in?"
   >
-    {new Array(6).fill().map((element, index) => <h4>Semester {index + 1}</h4>)}
+    {
+      new Array(6)
+        .fill(null)
+        .map((element, index) => <h4>Semester {index + 1}</h4>)
+    }
 
     {
       modules
         .filter(module => module.data.weight) // Only show modules that show up in the curriculum
         .sort((a, b) => a.data.weight - b.data.weight)
         .sort((a, b) => a.data.semester - b.data.semester)
-        .map(module => (
-          // TODO: create a component.
-          <Module course={module} />
-        ))
+        .map(module => <Module course={module} />)
     }
 
     <!-- <div class="c-curriculum__placeholder js-curriculum-placeholder">
@@ -133,12 +134,14 @@ const modules = await getCollection('programma')
       'next-web-developer',
       'xr-developer',
     ]
-    let selectedTrack = tracks[Math.floor(Math.random() * tracks.length)]
+    let selectedTrack: string =
+      tracks[Math.floor(Math.random() * tracks.length)]
 
-    const trackSelection = document.querySelectorAll('.js-track-radio')
+    const trackSelection: NodeListOf<HTMLInputElement> =
+      document.querySelectorAll('.js-track-radio')
     const courses = document.querySelectorAll('.js-course')
 
-    const toggleModules = track => {
+    const toggleModules = (track: string) => {
       console.log(track)
       for (const course of courses) {
         const classes = course.classList
@@ -153,8 +156,11 @@ const modules = await getCollection('programma')
     for (const track of trackSelection) {
       if (selectedTrack == track.value) track.checked = true
 
-      track.addEventListener('change', event => {
-        selectedTrack = event.target.value
+      track.addEventListener('change', (event: Event) => {
+        if (!event.target) return
+
+        const target = event.target as HTMLInputElement
+        selectedTrack = target.value
         toggleModules(selectedTrack)
       })
     }
