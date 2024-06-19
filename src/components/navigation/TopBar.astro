@@ -27,7 +27,7 @@ const getClosestEvent = (): string => {
     .filter(event => event.date > now)
     .sort((a, b) => a.date.getTime() - b.date.getTime())[0]
 
-  if (!closestEvent) return 'Geen evenementen gepland'
+  if (!closestEvent) return ''
 
   const date = new Intl.DateTimeFormat('nl-NL', {
     month: 'long',
@@ -40,15 +40,19 @@ const getClosestEvent = (): string => {
 }
 ---
 
-<aside class="bg-brand h-8 w-full px-24">
-  <Container class="flex h-full items-center gap-4 text-white">
-    <Icon
-      name="mdi:bell"
-      class="animate-bellshake duration-4s animation-delay-1s"
-    />
-    <p
-      class="font-mono text-[.7777777rem] font-semibold uppercase"
-      set:html={getClosestEvent()}
-    />
-  </Container>
-</aside>
+{
+  getClosestEvent() && (
+    <aside class="bg-brand flex min-h-8 w-full items-center px-24 py-1">
+      <Container class="grow-1 flex items-center gap-4 text-white">
+        <Icon
+          name="mdi:bell"
+          class="animate-bellshake duration-4s animation-delay-1s shrink-0"
+        />
+        <p
+          class="mr-auto font-mono text-[.7777777rem] font-semibold uppercase"
+          set:html={getClosestEvent()}
+        />
+      </Container>
+    </aside>
+  )
+}
